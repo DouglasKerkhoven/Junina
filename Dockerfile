@@ -8,8 +8,8 @@ WORKDIR /src
 
 COPY . .
 
-RUN dotnet restore "curitibano.microservico.junina"
-RUN dotnet build "curitibano.microservico.junina" -c Release -o /app/build
+RUN dotnet restore "curitibano.microservico.junina.csproj"
+RUN dotnet build "curitibano.microservico.junina.csproj" -c Release -o /app/build
 
 FROM build AS publish
 RUN dotnet publish "curitibano.microservico.junina.csproj" -c Release -o /app/publish /p:UseAppHost=false
