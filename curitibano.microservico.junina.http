@@ -1,0 +1,6 @@
+@curitibano.microservico.junina_HostAddress = http://localhost:5207
+
+GET {{curitibano.microservico.junina_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
