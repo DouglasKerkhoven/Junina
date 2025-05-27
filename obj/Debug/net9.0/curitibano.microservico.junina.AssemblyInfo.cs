@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("curitibano.microservico.junina")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+67dda34e5c49dd2a5d2580feca0686348790cfe4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+84e264bcd45a501f806ad052da4cb1029e48e038")]
 [assembly: System.Reflection.AssemblyProductAttribute("curitibano.microservico.junina")]
 [assembly: System.Reflection.AssemblyTitleAttribute("curitibano.microservico.junina")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
