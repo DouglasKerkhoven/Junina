@@ -8,6 +8,7 @@ namespace curitibano.microservico.junina.Application
     {
         public int ItemId { get; set; }
         public int QtdVendida { get; set; }
+        public int FormaId { get; set; }
     }
     public class BaixarItemCommandHandler : IRequestHandler<BaixarItemCommand, Item>
     {
@@ -35,6 +36,7 @@ namespace curitibano.microservico.junina.Application
                 venda.Quantidade = request.QtdVendida;
                 venda.ValorTotal = item.Valor * request.QtdVendida;
                 venda.ItemId = item.Id;
+                venda.FormaId = request.FormaId;
                 await _vendaRepository.Adicionar(venda);
 
                 return item;

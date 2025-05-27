@@ -26,6 +26,10 @@ namespace curitibano.microservico.junina.Infra.Repository
         public async Task<List<Venda>> ObterTodos()
         {
             return await _context.Venda.Include(v => v.Item).ToListAsync();
+        }        
+        public async Task<List<Venda>> ObterTodosPorData(DateTime inicio,DateTime fim)
+        {
+            return await _context.Venda.Include(v => v.Item).Where(o => o.DataVenda.Date.Date >= inicio.Date && o.DataVenda.Date<= fim.Date).ToListAsync();
         }
 
         public async Task Atualizar(Venda venda)

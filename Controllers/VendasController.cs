@@ -25,5 +25,13 @@ namespace curitibano.microservico.junina.Controllers
             return Ok(resultado);
         }
 
+        [HttpGet("inicio/{inicio}/fim/{fim}")]
+        public async Task<ActionResult> GetItens(DateTime inicio,DateTime fim)
+        {
+            var resultado = await _vendaRepository.ObterTodosPorData(inicio, fim);
+
+            return Ok(resultado);
+        }
+
     }
 }

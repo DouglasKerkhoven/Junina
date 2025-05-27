@@ -154,6 +154,38 @@
         }
       }
     },
+    "/api/vendas/inicio/{inicio}/fim/{fim}": {
+      "get": {
+        "tags": [
+          "Vendas"
+        ],
+        "parameters": [
+          {
+            "name": "inicio",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "date-time"
+            }
+          },
+          {
+            "name": "fim",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "date-time"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/WeatherForecast": {
       "get": {
         "tags": [
@@ -222,6 +254,10 @@
             "format": "int32"
           },
           "qtdVendida": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "formaId": {
             "type": "integer",
             "format": "int32"
           }

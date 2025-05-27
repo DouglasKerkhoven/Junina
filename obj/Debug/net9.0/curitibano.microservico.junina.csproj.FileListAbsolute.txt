@@ -317,10 +317,11 @@ C:\Repositorio\Junina\obj\Debug\net9.0\staticwebassets\msbuild.build.curitibano.
 C:\Repositorio\Junina\obj\Debug\net9.0\staticwebassets\msbuild.buildMultiTargeting.curitibano.microservico.junina.props
 C:\Repositorio\Junina\obj\Debug\net9.0\staticwebassets\msbuild.buildTransitive.curitibano.microservico.junina.props
 C:\Repositorio\Junina\obj\Debug\net9.0\staticwebassets.pack.json
-C:\Repositorio\Junina\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
 C:\Repositorio\Junina\obj\Debug\net9.0\curitiba.41EFFF3C.Up2Date
 C:\Repositorio\Junina\obj\Debug\net9.0\curitibano.microservico.junina.dll
 C:\Repositorio\Junina\obj\Debug\net9.0\refint\curitibano.microservico.junina.dll
 C:\Repositorio\Junina\obj\Debug\net9.0\curitibano.microservico.junina.pdb
 C:\Repositorio\Junina\obj\Debug\net9.0\curitibano.microservico.junina.genruntimeconfig.cache
 C:\Repositorio\Junina\obj\Debug\net9.0\ref\curitibano.microservico.junina.dll
+C:\Repositorio\Junina\bin\Debug\net9.0\itens.db
+C:\Repositorio\Junina\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
