@@ -1,0 +1,25 @@
+
+services:
+  api:
+    build:
+      context: ../Junina
+      dockerfile: Dockerfile
+    container_name: junina-api
+    ports:
+      - "5000:80"
+    volumes:
+      - ./Junina/itens.db:/app/itens.db
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+
+  front:
+    build:
+      context: ./Junina_Front
+      dockerfile: Dockerfile
+    container_name: junina-front
+    ports:
+      - "5001:80"
+    depends_on:
+      - api
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development

@@ -3,6 +3,7 @@ using curitibano.microservico.junina.Infra.Repository;
 using MediatR;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Database;
 
 namespace curitibano.microservico.junina.Controllers
 {
@@ -59,11 +60,10 @@ namespace curitibano.microservico.junina.Controllers
         }
 
         [HttpPatch("id/{id}")]
-        public async Task<ActionResult> PatchItemPorId(int id)
+        public async Task<ActionResult> PatchItemPorId(AtualizarItemCommand command)
         {
-            var item = await _itemRepository.ObterPorId(id);
-            if (item is not null)
-                await _itemRepository.Atualizar(item);
+            var resultado = await _mediator.Send(command);
+            
 
             return Ok("Item atualizado");
         }
